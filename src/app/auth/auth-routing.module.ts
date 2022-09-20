@@ -17,7 +17,7 @@ const routes: Routes = [
         component: RegistroComponent
       },
       {
-        path: '***',
+        path: '**',
         redirectTo: 'login'
       }
     ]

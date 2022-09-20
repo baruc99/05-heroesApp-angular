@@ -18,15 +18,34 @@
 
     </mat-sidenav>
     
-    <mat-toolbar>
+    <!-- <mat-toolbar>
         <button mat-icon-button (click)="sidenav.toggle()">
             <mat-icon>menu</mat-icon>
         </button>
 
         <span class="spacer"></span>
 
-        <button mat-icon-button>
+        <span> {{ auth.usuario }}  </span>
+
+        <button mat-icon-button (click)="logout()" >
             logout 
+        </button>
+    </mat-toolbar> -->
+
+
+    <mat-toolbar>
+        <button mat-icon-button
+                (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <span class="spacer"></span>
+
+        <span>{{ auth.usuario }} </span>
+
+        <button mat-button
+                (click)="logout()">
+            Logout
         </button>
     </mat-toolbar>
 
